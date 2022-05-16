@@ -1,4 +1,6 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+Current Language: {{ languageService.getLanguage() }}
+
+<div>{{ languageService.getValue('hello') }} user!</div>
+
+<button (click)="languageService.setLanguage('it')">IT</button>
+<button (click)="languageService.setLanguage('en')">EN</button>
