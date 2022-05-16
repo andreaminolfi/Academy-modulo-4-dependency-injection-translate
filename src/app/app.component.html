@@ -1,6 +1,7 @@
 Current Language: {{ languageService.getLanguage() }}
 
 <div>{{ languageService.getValue('hello') }} user!</div>
+<div>{{ 'hello' | translate }}</div>
 
 <button (click)="languageService.setLanguage('it')">IT</button>
 <button (click)="languageService.setLanguage('en')">EN</button>
